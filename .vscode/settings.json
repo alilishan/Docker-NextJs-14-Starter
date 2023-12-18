@@ -1,0 +1,7 @@
+{
+    "tailwindCSS.lint.invalidTailwindDirective": "ignore",
+    "files.associations": {
+        "*.scss": "tailwindcss",
+        "*.css": ""
+    }
+}
