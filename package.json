@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:dev": "docker run -it -v .:/app -v ./node_modules:/app/node_modules -p 127.0.0.1:3000:3000 next14-docker-starter npm run dev",
+    "docker:build": "docker run -it -v .:/app -v ./node_modules:/app/node_modules next14-docker-starter npm run build",
+    "docker:start": "docker run -it -v .:/app -v ./node_modules:/app/node_modules -p 127.0.0.1:3000:3000 next14-docker-starter npm run start",
+    "docker:install": "docker run -it -v .:/app -v ./node_modules:/app/node_modules next14-docker-starter npm install"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",

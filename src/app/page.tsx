@@ -1,19 +1,15 @@
-import React, { FC } from "react";
-import {Button} from '@nextui-org/button';
+import React from "react";
+import { NextPage } from "next";
 
-interface Props {
-    identifiers: string;
-}
 
-const AppPage:FC<Props> = () => {
+const AppPage:NextPage = async() => {
+
     return (
-        <div className="container-full mx-auto">
-            <div className="grid grid-cols-3">
-
-                <div className="bg-yellow-200">Sidebar</div>
-
-                <div className="col-span-2 bg-red-300">Main Items</div>
-
+        <div className="container-full mx-auto h-100">
+            <div className="row h-100">
+                <div className="col-12 col-md-6 col-lg-4 mx-auto my-auto">
+                    <h1 className="text-center">Welcome to Next 14 Starter Pack</h1>
+                </div>
             </div>
         </div>
     );

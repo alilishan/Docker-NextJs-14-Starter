@@ -1,5 +1,6 @@
 # NextJS Starter Pack
 
+* Docker
 * NextJS 14 - Typescript
 * Tailwind
 * SASS
@@ -23,6 +24,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
+## Docker Based Development
+To handle the difference of node versions
+
+```bash
+# Build Image
+docker build -t next14-docker-starter . --no-cache
+
+# First Install
+npm run docker:install
+
+# Local Development
+npm run docker:dev
+
+# Build
+npm run docker:build
+
+# Start
+npm run docker:start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 
 ## Learn More
 
