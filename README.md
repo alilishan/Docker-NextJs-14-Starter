@@ -9,6 +9,11 @@
 
 ## Getting Started
 
+Rename the docker and project names
+```bash
+find . -name '*' -exec sed -i -e 's/next14-docker-starter/{NEW NAME}/g' {} \;
+```
+
 First, run the development server:
 
 ```bash
