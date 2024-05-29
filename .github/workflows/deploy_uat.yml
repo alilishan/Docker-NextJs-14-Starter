@@ -71,10 +71,7 @@ jobs:
       - name: Stop Docker Container
         run: docker stop ${{ env.APP_NAME_DOCKER }}-container
 
-      - name: Remove Docker Container
-        run: docker rm ${{ env.APP_NAME_DOCKER }}-container
-
       - name: Restart the Docker Container
-        run: docker run -d --name ${{ env.APP_NAME_DOCKER }}-container -v .:/app -v ./node_modules:/app/node_modules -p 127.0.0.1:${{ env.APP_PORT }}:3000 marc-logs-app npm run start
+        run: docker run -d --name ${{ env.APP_NAME_DOCKER }}-container --rm -v .:/app -v ./node_modules:/app/node_modules -p 127.0.0.1:${{ env.APP_PORT }}:3000 ${{ env.APP_NAME_DOCKER }} npm run start
         env:
           CI: true
