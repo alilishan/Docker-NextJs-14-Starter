@@ -13,9 +13,9 @@
     "docker:install": "docker run -it -v .:/app -v ./node_modules:/app/node_modules next14-docker-starter npm install"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.9",
+    "@nextui-org/react": "^2.4.1",
     "@svgr/webpack": "^8.1.0",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.18.0",
     "next": "14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18",
