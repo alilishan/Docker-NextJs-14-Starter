@@ -5,7 +5,8 @@ COPY package*.json ./
 EXPOSE 3000
 # CMD npm run dev
 
-
+ENV TZ="Asia/Singapore"
+RUN date
 
 # FOR DEV
 # Build Image
